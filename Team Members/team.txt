@@ -1,0 +1,7 @@
+Team Member
+
+1. Siva Kumar Yenda --> Home Page
+2. Sakshi Kumari --> Signup/Login Page
+3. Raushan Kumar --> Product Page
+4. Vaibhav Jaware --> Cart Page
+5. Kirti Gupta --> Payment Page
