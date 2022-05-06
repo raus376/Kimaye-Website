@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/613db488d5.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/613db488d5.js" crossorigin="anonymous"></script>
+    <title>Products</title>
+
+    <link rel="stylesheet" href="product.css">
+  <style>
+      
+  </style>
+</head>
+<body>
+     <!-- Navbar Starts here -->
+     <div id="nav">
+        <div id="navbar">
+          <div class="select">
+            <select name="" id="select1">
+              <option value="Shop">SHOP</option>
+              <option value="All Fruits">ALL FRUITS</option>
+              <option value="Fresh Cuts">FRESH CUTS</option>
+              <option value="Fruit Combos">FRUIT COMBOS</option>
+              <option value="Gift By Kimaye">GIFTS BY KIMAYE</option>
+              <option value="Grape Family By Kimaye">GRAPE FAMILY BY KIMAYE</option>
+              <option value="Community Buying">COMMUNITY BUYING</option>
+            </select>
+  
+            <select name="" id="select2">
+              <option value="">LEARN</option>
+              <option value="">OUR STORY</option>
+              <option value="">WHY KIMAYE</option>
+              <option value="">TRACEABILITY</option>
+              <option value="">BEYOND FRUITS</option>
+            </select>
+  
+            <p>GROW</p>
+          </div>
+          <div class="logo">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204"
+              alt="logoImg"
+            />
+          </div>
+          <div class="loginCart">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2991/2991231.png"
+              alt="map"
+            />
+            <p>Delhi</p>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/54/54481.png"
+              alt="search"
+            />
+            <img
+              id="login"
+              src="https://cdn-icons-png.flaticon.com/512/456/456283.png"
+              alt="user"
+            />
+            <img
+              id="cart"
+              src="https://cdn-icons-png.flaticon.com/128/1656/1656850.png"
+              alt="cart"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Navbar Ends Here -->
+
+      <!-- categories select section upper -->
+      <div id="categories">
+        <ul id="ALL_FRUITS">ALL FRUITS</ul>
+        <ul id="FRESH_CUTS">FRESH CUTS</ul>
+        <ul id="FRUITS_COMBOS">FRUITS COMBOS</ul>
+        <ul id="GIFTS_BY_KIMAYE">GIFTS BY KIMAYE</ul>
+      </div>
+      <!-- !-- categories select section upper -->
+      <div id="smallNav">
+        <div>
+          <a href="/Unit-2 Project/Kimaye_Website/index.html"><i class="fa-solid fa-house-user"></i></a>
+          <a href="/Unit-2 Project/Kimaye_Website/index.html"><p>Home</p></a>
+          <p>/</p>
+          <p id="sectionName"></p>
+        </div>
+        <div id="pTag">
+          <p id="len"></p>
+        </div>
+      </div>
+      
+      <div id="container"></div>
+
+        <!-- categories select section down-->
+        <div id="categories">
+          <ul id="ALL_FRUITS1">ALL FRUITS</ul>
+          <ul id="FRESH_CUTS1">FRESH CUTS</ul>
+          <ul id="FRUITS_COMBOS1">FRUITS COMBOS</ul>
+          <ul id="GIFTS_BY_KIMAYE1">GIFTS BY KIMAYE</ul>
+        </div>
+        <!-- !-- categories select section down -->
+
+       
+       
+      
+     
+     
+</body>
+</html>
+
+<script>
+
+var fruitsData=[{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/image_540x.jpg?v=1620889338",
+fruitName:"Kimaye Jamun(250 gm)",fruitPrice:"₹189"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/MicrosoftTeams-image_1_540x.jpg?v=1649415923",
+fruitName:"Kimaye Summer Combo",fruitPrice:"₹477",category:"Fruit Combos",categoryValue:"valuePack"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/cover_19473cce-96ae-4149-aaa1-508f17ac6c28_540x.jpg?v=1648186636",
+fruitName:"Kimaye Watermelon (1pc)",fruitPrice:"₹79",categoryValue:"valuePack"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/cover_540x.jpg?v=1647932788",
+fruitName:"Kimaye Green Apples (Pack of 3 pc & 6 pc)",fruitPrice:"₹140-₹270",categorySold:"sold"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/MangoCover_908c34e6-fcdb-4564-918e-48d7baeaf628_540x.jpg?v=1645445684",
+fruitName:"Kimaye Alphonso Mango",fruitPrice:"₹276-₹1499",category:"Community Buying",categoryValue:"valuePack",categorySold:"sold"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/5e8b2ee6-ce8e-42e9-959f-d43c544f586a_540x.png?v=1616326949",
+fruitName:"Kimaye Blueberries (125gm)",fruitPrice:"₹419"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Chiku-cover_7b7702b6-dbf6-4d51-aabd-70df2f5e4195_540x.jpg?v=1646830414",
+fruitName:"Kimaye Sapota (6pc)",fruitPrice:"₹76",categoryValue:"valuePack"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/cover-Mango-badami_540x.jpg?v=1620473077",
+fruitName:"Kimaye Badami Mangoes (pack of 3pcs)",fruitPrice:"₹169"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Avocado_540x.jpg?v=1622045722",
+fruitName:"Kimaye Avocado Imported (1pc~250gm)",fruitPrice:"₹315"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/463b5516-614a-4a66-9556-f4a09e45afbc_360x.png?v=1614326370",
+fruitName:"Kimaye Pear Green (Pack of 2 & 4)",fruitPrice:"₹110-₹209"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/a0cfceb5-76a4-4994-9d37-978c6dc3b309_360x.png?v=1611811512",
+fruitName:"Kimaye Imported Oranges (Pack of 3 & 6)",fruitPrice:"₹105-₹199",categorySold:"sold"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/royal-gala-apple-cover_360x.jpg?v=1643012816",
+fruitName:"Kimaye Royal Gala Apples (Pack of 3 & 6)",fruitPrice:"₹163-₹315"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/069bdaa3-eca4-4f4c-8f02-970a626f7be3_360x.png?v=1616393545",
+fruitName:"Kimaye Grapes (Flames Seedless (500g & 2Kg)",fruitPrice:"₹109-₹431",category:"Grape Family By Kimaye",categoryValue:"valuePack"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Grapescombo_360x.png?v=1641883595",
+fruitName:"Kimaye Green & Black Grapes COmbo (250gm)",fruitPrice:"₹98",category:"Fruit Combos",categoryValue:"valuePack",categorySold:"sold"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Grapescombo_1_360x.png?v=1642492575",
+fruitName:"Kimaye Three Grape Combo",fruitPrice:"₹152",category:"Fruit Combos",categorySold:"sold"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/grapefruit-cover_360x.jpg?v=1639461484",
+fruitName:"Kimaye Grapefruit (pack of 2 & 4pcs)",fruitPrice:"₹150-₹289",category:"Grape Family By Kimaye",categoryValue:"valuePack"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/dragon-fruit--white-cover_360x.jpg?v=1632470660",
+fruitName:"Kimaye Dragon Fruit (1pc)",fruitPrice:"₹89",categorySold:"sold"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/cover-sun-melon_360x.jpg?v=1620314805",
+fruitName:"Kimaye Sun Melon (1pc)",fruitPrice:"₹63"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/washington-applecover_360x.jpg?v=1641449752",
+fruitName:"Kimaye Washington Apples (Pack of 2pc & 4pc)",fruitPrice:"₹165-₹311"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/cover-Mango_5fc755ae-5f58-4127-b1f9-30bceaa56e3d_360x.jpg?v=1620127827",
+fruitName:"Kimaye Kesar Mangoes",fruitPrice:"₹405-₹799"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/golden-kiwi-cover_360x.jpg?v=1625147312",
+fruitName:"Kimaye Golden Kiwis (3pcs)",fruitPrice:"₹199"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/bd07b8e7-3643-4a98-996e-c85fd7d133a8_360x.png?v=1614765886",
+fruitName:"Kimaye Globe Imported (400gm)",fruitPrice:"₹219",category:"Grape Family By Kimaye",categoryValue:"valuePack",categorySold:"sold"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/CopyofGuava_Main_Clean_360x.png?v=1606828311",
+fruitName:"Kimaye Thai Gauva (1pc~04-0.5kg)",fruitPrice:"₹69"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/1_3311b3de-1a38-4175-8e8c-ac9577ec85df-min_540x.jpg?v=1614324760",
+fruitName:"Kimaye Bannanas Robusta (5-6 pcs)",fruitPrice:"₹42"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/221f2788-1a08-45ae-bdaf-7432d7ea0156_540x.png?v=1614326590",
+fruitName:"Kimaye Three Pomegrantes (pack of 2 & 4)",fruitPrice:"₹150-₹289"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/1_6875ada8-f1e6-4589-b1fd-6f13a86b8ddb-min_540x.jpg?v=1614326164",
+fruitName:"Kimaye Kiwis (3pcs~300gm",fruitPrice:"₹133"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/62cef687-de59-4f5a-acf3-4df1238c3e29-min_540x.png?v=1614324446",
+fruitName:"Kimaye Arilis-Coco Cup(125g)",fruitPrice:"₹55-₹140",category:"Fresh Cuts",categoryValue:"valuePack"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/CopyofMosambi_Main_FixedShadows-min_540x.png?v=1614327057",
+fruitName:"Kimaye Mosambi (pack of 3 & 6)",fruitPrice:"₹77-₹145",categorySold:"sold"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Papaya-cover_540x.jpg?v=1638875170",
+fruitName:"Kimaye Papaya (1pc)",fruitPrice:"₹66",categorySold:"sold"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Yelakki-banana-cover_bc79dea2-08f8-404b-99f5-327a91213fbb_360x.jpg?v=1627026370",
+fruitName:"Kimaye Bannanas Yelakki",fruitPrice:"₹38-₹119"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Muskmelon-cover_360x.jpg?v=1633763200",
+fruitName:"Kimaye Golden Muskmelon (1pcs)",fruitPrice:"₹71"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/47dfb7d1-d8d3-4c96-bda9-7dc85dfdec51_360x.png?v=1613364164",
+fruitName:"Kimaye Pomograntes Seeds (Arils Cup)(125g)",fruitPrice:"₹55-₹140",category:"Fresh Cuts",categoryValue:"valuePack"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/24d0f9c9-fe83-40a3-84ab-300e73e4ff8d_360x.png?v=1611811511",
+fruitName:"Kimaye Coconut Chunks Cup (100g)",fruitPrice:"₹51-₹130",category:"Fresh Cuts",categorySold:"sold"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/221f2788-1a08-45ae-bdaf-7432d7ea0156_540x.png?v=1614326590",
+fruitName:"Kimaye Grated Cocunut Punnet",fruitPrice:"₹51",category:"Fresh Cuts"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Picture3_3cf8f5aa-4155-4a94-9768-9819bb41835f_360x.jpg?v=1641381097",
+fruitName:"Kimaye Plum",fruitPrice:"₹191"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Wholesome-combo_360x.jpg?v=1618497683",
+fruitName:"Kimaye Wholesome Combo",fruitPrice:"₹914",category:"Fruit Combos",categoryValue:"valuePack"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/KiwiBlueberry_360x.png?v=1617983685",
+fruitName:"Kimaye Kiwis-Blueberries Combo",fruitPrice:"₹525",category:"Fruit Combos"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/b2fdf9f3-93a9-4ae2-bd80-bfaf63af08d9_360x.png?v=1615017122",
+fruitName:"Kimaye ",fruitPrice:"₹66"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Yelakki-banana-cover_bc79dea2-08f8-404b-99f5-327a91213fbb_360x.jpg?v=1627026370",
+fruitName:"Kimaye Variety:Seedless (500gm)",fruitPrice:"₹99",category:"Grape Family By Kimaye"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7821_540x.jpg?v=1631350656",
+fruitName:"Kimaye Fruits by Kimaye (Cherish)",fruitPrice:"₹1400",category:"Gift By Kimaye"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7807_540x.jpg?v=1631347621",
+fruitName:"Kimaye Fruits by Kimaye (Adore)",fruitPrice:"₹1800",category:"Gift By Kimaye"},
+{fruitImg:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7790_540x.jpg?v=1631346990",
+fruitName:"Kimaye Fruits by Kimaye (Strength)",fruitPrice:"₹2400",category:"Gift By Kimaye",categorySold:"sold"},
+];
+
+
+// var cartArr=JSON.parse(localStorage.getItem("cartItems")) || [];
+var cartArr=JSON.parse(localStorage.getItem("cartItems")) || [];
+
+
+document.querySelector("#ALL_FRUITS").addEventListener("click",allFruitsFun)
+document.querySelector("#FRESH_CUTS").addEventListener("click",freshCutsFun)
+document.querySelector("#FRUITS_COMBOS").addEventListener("click",fruitCombosFun)
+document.querySelector("#GIFTS_BY_KIMAYE").addEventListener("click",giftByKimayeFun)
+
+document.querySelector("#ALL_FRUITS1").addEventListener("click",allFruitsFun)
+document.querySelector("#FRESH_CUTS1").addEventListener("click",freshCutsFun)
+document.querySelector("#FRUITS_COMBOS1").addEventListener("click",fruitCombosFun)
+document.querySelector("#GIFTS_BY_KIMAYE1").addEventListener("click",giftByKimayeFun)
+
+var count1=0;
+var count2=0;
+  var count3=0;
+  var count4=0;
+
+
+
+function allFruitsFun(){
+  // var count1=0;
+  count1++;
+  displayData(fruitsData)
+  console.log(fruitsData)
+}
+
+function freshCutsFun(){
+  // var count2=0;
+  count2++;
+  var fresh=fruitsData.filter(function(ele){
+    return ele.category=="Fresh Cuts"
+  })
+  displayData(fresh)
+  console.log(fresh)
+}
+
+function fruitCombosFun(){
+  // var count3=0
+  count3++;
+  var fresh=fruitsData.filter(function(ele){
+    return ele.category=="Fruit Combos"
+  })
+  displayData(fresh)
+  console.log(fresh)
+}
+
+function giftByKimayeFun(){
+  // var count4=0;
+  count4++;
+  var fresh=fruitsData.filter(function(ele){
+    return ele.category=="Gift By Kimaye"
+  })
+  displayData(fresh)
+  console.log(fresh)
+}
+
+document.querySelector("#select1").addEventListener("change",myFunction)
+
+function myFunction()
+{
+  var check=document.querySelector("#select1").value;
+  console.log(check)
+  if(check=="Shop" || check=="All Fruits")
+  {
+    displayData(fruitsData)
+    console.log(fruitsData)
+   
+  }
+  else{
+    var filterFruits=fruitsData.filter(function(ele){
+      return ele.category==check;
+    })
+    displayData(filterFruits)
+    console.log(filterFruits)
+  }
+}
+console.log(fruitsData)
+
+
+displayData(fruitsData);
+
+function displayData(fruitsData){
+
+  var len=fruitsData.length;
+document.querySelector("#len").innerText="Showing"+" "+len+" "+"results";
+
+var sec=document.querySelector("#select1").value;
+document.querySelector("#sectionName").innerText=sec;
+
+if(count1>=1)
+{
+  document.querySelector("#sectionName").innerText="All Fruits";
+  count1=0;
+}
+
+if(count2>=1)
+{
+  document.querySelector("#sectionName").innerText="Fresh Cuts";
+  count2=0;
+}
+
+if(count3>=1)
+{
+  document.querySelector("#sectionName").innerText="Fresh Combos";
+  count3=0;
+}
+
+if(count4>=1)
+{
+ 
+  document.querySelector("#sectionName").innerText="Gift By Kimaye";
+  count4=0;
+}
+
+
+   document.querySelector("#container").innerHTML="";
+  fruitsData.forEach(function(ele){
+
+    // console.log(ele)
+    if(ele.categoryValue=="valuePack")
+    {
+      var posval=document.createElement("h4");
+    posval.innerText="Value Pack"
+    
+    
+    }
+    
+   
+     if(ele.categorySold=="sold")
+     {
+    
+       var possold=document.createElement("h5");
+     possold.innerText="sold";
+   
+     }
+    var box=document.createElement("div");
+
+    var img=document.createElement("img");
+    img.setAttribute("src",ele.fruitImg);
+
+    var cart=document.createElement("div");
+    cart.innerHTML=`<i class="fa-solid fa-cart-plus"></i> _ Add to cart` 
+    cart.addEventListener("click",function()
+    {
+      cartFunction(ele)
+    })
+    // cart.innerText="add to cart";
+
+    var name=document.createElement("p");
+    name.innerText=ele.fruitName;
+
+    var price=document.createElement("p");
+    price.innerText=ele.fruitPrice;
+
+    if(ele.categoryValue=="valuePack")
+    {
+      box.append(posval,img,cart,name,price);
+    }
+
+     if(ele.categorySold=="sold")
+     {
+       box.append(possold,img,cart,name,price);
+     }
+
+    // if(ele.categorySold="sold")
+    // {
+    //   box.append(possold,img,cart,name,price);
+    // }
+    
+      box.append(img,cart,name,price);
+  
+
+   
+
+  
+
+   document.querySelector("#container").append(box)
+  })
+
+  function cartFunction(ele)
+  {
+     cartArr.push(ele)
+     console.log(cartArr)
+    localStorage.setItem("cartItems",JSON.stringify(cartArr))
+    // window.location.href="cart.html"
+  }
+
+}
+
+
+
+
+</script>

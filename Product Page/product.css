@@ -1,0 +1,265 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #eeeeea;
+   
+  }
+  /* Navbar starts Here */
+  #nav {
+    background-color: #eeeeea;
+  }
+  
+  #navbar {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .select {
+    display: flex;
+    width: 30%;
+  }
+  #select1,
+  #select2 {
+    width: 30%;
+    border: none;
+    margin-left: 5px;
+    background-color: #eeeeea;
+  }
+  #select2 + p {
+    width: 30%;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .logo {
+    width: 15%;
+    margin-left: -100px;
+  }
+  .logo > img {
+    width: 100%;
+  }
+  
+  .loginCart {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .loginCart > img {
+    width: 8%;
+    height: 20px;
+  }
+  .loginCart > p {
+    margin-left: -10px;
+  }
+  
+  /* Navbar Ends Here */
+/* categories section starts here */
+#categories{
+  margin: auto;
+  height: auto;
+  width: 80%;
+  display: flex;
+  gap: 5px;
+  justify-content:center;
+  background-color: #eeeeea;
+}
+#categories>ul{
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  color:rgba(0, 0, 0, 0.821)
+  
+}
+/* categories section ends here */
+
+/* small nav start here */
+
+#smallNav{
+  height: 20px;
+  width:80%;
+  border: 1px solid rebeccapurple;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+}
+#smallNav > div{
+    display: flex;
+    height: auto;
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap:5px;
+
+}
+p+p{
+  color:grey;
+  font-size: auto;
+  
+}
+#pTag{
+  /* text-align:right; */
+  justify-content:right;
+  color:grey
+  
+}
+#len{
+  font-size: auto;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+  #container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+   
+  
+  }
+
+  #container > div{
+    height: auto;
+    width: auto;
+    border: 1px solid red;
+    margin:auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+  }
+  img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+    /* height: 60%; */
+  }
+  img~div{
+    height: 80px;
+    width: 100%;
+    border: 1px solid rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 25px; */
+    background-color:  #437111!important;
+    color: white;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ; */
+    height: 48px;
+    line-height: 28px;
+    font-size: 0.875em;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: "PT Sans",Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    min-height: 35px;
+     font-size: 0.875em;
+     max-height: 55px;
+  }
+  div+p{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.796);
+    font-family: "PT Sans",Arial,Helvetica,sans-serif;
+   
+    font-weight: 600;
+    letter-spacing: 0.8px;
+  }
+  div+p+p{
+    text-align: center;
+    color: rgba(166, 5, 5, 0.949);
+    font-size: 20px;
+    margin-top: -5px;
+
+  }
+  h4{
+    color:white;
+    position: absolute;
+    margin-top: 5px;
+    background-color: #437111;
+    /* width: 45%; */
+    padding: 4px 7px;
+  }
+  h5{
+    color:white;
+    position: absolute;
+    margin-top: 32px;
+    background-color:rgb(77, 2, 2);
+    /* width: 45%; */
+    padding: 4px 11px;
+    font-size:15px ;
+    letter-spacing: 0.8px;
+    /* line-height: 30px; */
+  }
+
+  @media all and (min-width: 451px) and (max-width: 750px){
+    #categories{
+      gap: 2px;
+    }
+   
+    /* categories section ends here */
+    
+    /* small nav start here */
+    
+    #smallNav{
+      width:90%;
+      margin-top: 40px;
+    }
+   
+      #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+      }
+    
+    }
+
+    @media all and (min-width: 80px) and (max-width: 450px){
+      #categories{
+        gap: 2px;
+      }
+     
+      /* categories section ends here */
+      
+      /* small nav start here */
+      
+      #smallNav{
+        width:100%;
+        margin-top: 40px;
+      }
+     
+        #container{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: auto;
+          gap: 10px;
+          width: 80%;
+          margin: auto;
+          margin-top: 20px;
+        }
+        a{
+          font-size: auto;
+        }
+      
+      }
+  
