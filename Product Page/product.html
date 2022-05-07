@@ -9,11 +9,22 @@
     <title>Products</title>
 
     <link rel="stylesheet" href="product.css">
-  <style>
-      
-  </style>
+   <link rel="stylesheet" href="footer.css">
+    
+ 
 </head>
 <body>
+  <!-- floating window -->
+  <div id="float">
+    <div id="float1">
+      <img alt="rr" src="https://cdn.sweettooth.io/v1/images/launcher_icons/bag.svg?color=%23FFFFFF">
+    <h1>Kimaye Rewards</h1>
+    </div>
+    <div id="float2">
+      <img alt="rr" src="https://cdn.live.zoko.io/store/customers/d9b85c58-d794-4956-a18e-c36f838226bb-zo-ko-Icon.svg">
+    </div>
+  </div>
+  <!-- floating window ends here -->
      <!-- Navbar Starts here -->
      <div id="nav">
         <div id="navbar">
@@ -100,13 +111,81 @@
         </div>
         <!-- !-- categories select section down -->
 
+
+       <!-- footer section -->
+
+       <!-- footer starts here  -->
+    <div id="footer">
+      <div>
+        <div class="options">
+          <div>
+            <a href="faq.html">FAQ's</a>
+          </div>
+          <div>
+            <a href="contactus.html">Contact Us</a>
+          </div>
+          <div>
+            <a href="">Shipping & Return Policy</a>
+          </div>
+          <div>
+            <a href="">Terms & Conditions</a>
+          </div>
+          <div>
+            <a href="">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="socialMedia">
+          <div><p>Follow us on</p></div>
+          <div class="icons">
+            <div>
+              <img
+                class="facebook"
+                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="instagram"
+                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="twitter"
+                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div>
+        <div><p>Copyright©2020. All Rights Reserved</p></div>
+        <div class="ting">
+          <div>
+            <div><p>Made</p></div>
+            <div><p>by</p></div>
+          </div>
+          <div class="h4"><h4>ting</h4></div>
+        </div>
+      </div>
+    </div>
        
-       
-      
+      <!-- footer section ends here -->
      
      
 </body>
 </html>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+></script>
 
 <script>
 
@@ -219,7 +298,9 @@ var count2=0;
 
 
 function allFruitsFun(){
+  
   // var count1=0;
+  
   count1++;
   displayData(fruitsData)
   console.log(fruitsData)
@@ -383,6 +464,7 @@ if(count4>=1)
      cartArr.push(ele)
      console.log(cartArr)
     localStorage.setItem("cartItems",JSON.stringify(cartArr))
+    alert("Added Successfully")
     // window.location.href="cart.html"
   }
 
@@ -390,5 +472,32 @@ if(count4>=1)
 
 
 
+ document.querySelector("#login").addEventListener("click", function () {
+    window.location.href = "login.html";
+  });
+  document.querySelector("#cart").addEventListener("click", function () {
+    window.location.href = "cart.html";
+  });
+  document.querySelector(".logo").addEventListener("click", function () {
+    window.location.href = "index.html";
+  });
 
+  // social media handles
+  document.querySelector(".facebook").addEventListener("click", function () {
+    window.location.href = "https://www.facebook.com/KimayeFruits/";
+  });
+  document.querySelector(".instagram").addEventListener("click", function () {
+    window.location.href = "https://www.instagram.com/kimayefruits/";
+  });
+  document.querySelector(".twitter").addEventListener("click", function () {
+    window.location.href = "https://twitter.com/kimaye_ini";
+  });
 </script>
+
+<!-- footer part -->
+
+
+
+<!-- footer part ends here -->
+
+

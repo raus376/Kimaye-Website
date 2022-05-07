@@ -1,0 +1,86 @@
+/* <!-- footer starts here  --> */
+  .options > div {
+    margin-top: -5px;
+  }
+  
+  .options > div > a {
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #footer {
+    background-color: #7d9c5b;
+    margin-top: 40px;
+  }
+  #footer > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  .icons {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: -10px;
+  }
+  .icons > div > img {
+    margin-left: 10px;
+  }
+  .socialMedia > div > p {
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  #footer > .socialMedia {
+    margin-left: 100%;
+  }
+  div > hr {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  hr + div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    width: 60%;
+    justify-content: space-around;
+  }
+  .ting {
+    display: flex;
+    justify-content: right;
+  }
+  .ting > div > div > p {
+    background-color: white;
+    text-align: left;
+    font-size: 10px;
+  }
+  .ting > div > div {
+    height: 10%;
+  }
+  
+  .ting > div > div + div {
+    margin-top: -5px;
+    margin-left: 20px;
+  }
+  .ting > div > div + div > p {
+    width: 95%;
+  }
+  .ting > .h4 {
+    position: relative;
+  }
+  .ting > div > h4 {
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    font-family: monospace;
+    bottom: 10px;  
+ }

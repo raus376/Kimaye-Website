@@ -7,6 +7,7 @@ body {
   /* Navbar starts Here */
   #nav {
     background-color: #eeeeea;
+  
   }
   
   #navbar {
@@ -16,6 +17,7 @@ body {
     width: 80%;
     margin: auto;
     padding: 10px;
+    /* position:fixed; */
   }
   
   .select {
@@ -81,7 +83,7 @@ body {
 #smallNav{
   height: 20px;
   width:80%;
-  border: 1px solid rebeccapurple;
+  border: 0px solid rebeccapurple;
   margin: auto;
   display: flex;
   margin-top: 50px;
@@ -90,7 +92,7 @@ body {
     display: flex;
     height: auto;
     width: 50%;
-    border: 1px solid black;
+    border: 0px solid black;
     display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -134,7 +136,7 @@ a{
   #container > div{
     height: auto;
     width: auto;
-    border: 1px solid red;
+    border: 0px solid red;
     margin:auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -150,7 +152,7 @@ a{
   img~div{
     height: 80px;
     width: 100%;
-    border: 1px solid rebeccapurple;
+    border: 0px solid rebeccapurple;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,7 +201,7 @@ a{
   h5{
     color:white;
     position: absolute;
-    margin-top: 32px;
+    margin-top: 35px;
     background-color:rgb(77, 2, 2);
     /* width: 45%; */
     padding: 4px 11px;
@@ -262,4 +264,106 @@ a{
         }
       
       }
-  
+      /* floating tags */
+      #bottomOpt{
+        height: 60px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        border: 0px solid rebeccapurple;
+        position:sticky;
+        position: static;
+        position: fixed;
+        margin-top: 570px;
+        justify-content: space-between;
+        z-index: 1;
+      }
+      #bottomOpt>div:nth-child(1){
+        height: 100%;
+        width: 15%;
+        border: 0px solid rebeccapurple;
+        margin-left: 40px;
+        background-color: gray;
+        /* justify-content: space-around; */
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:medium;
+        border-radius: 20px;
+      }
+      #bottomOpt>div>img{
+        height: 50%;
+        width: 50%;
+      }
+      #bottomOpt>div{
+        display: flex;
+        display: flex;
+        /* justify-content: end; */
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+      }
+     
+      #bottomOpt>div:nth-child(2){
+        height: 100%;
+        width: 5%;
+        border: 0px solid rebeccapurple;
+        margin-right: 40px;
+        
+       
+      }
+      #chat img{
+        width: 100%;
+        height: 100%;
+      }
+  body{
+    position: relative;
+    z-index: 2;
+  }
+   /* floating window*/
+   #float{
+     height: 55px;
+     width: 100%;
+     border: 0px solid rebeccapurple;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 640px;
+     z-index: 1;
+     position: fixed;
+   }
+   #float1{
+    height: 100%;
+    width: 15%;
+    border: 0px solid green;
+    margin-left: 25px;
+    display: flex;
+    background-color: gray;
+    border-radius: 25px;
+    cursor: pointer;
+    
+    /* justify-content: left; */
+   }
+   #float1 img{
+     width: 50%;
+   }
+   #float1 h1{
+     font-size: 17px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* margin-right: 35px; */
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   #float2{
+    height: 100%;
+    width: 5%;
+    border: 0px solid rgb(228, 174, 24);
+    margin-right: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+   }
+   #float2 img{
+     width: 100%;
+   }
+body{
+  z-index: 3;
+  position: relative;
+}
