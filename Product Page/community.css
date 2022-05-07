@@ -1,0 +1,186 @@
+body{
+    background-color: #4c4c4c1b;
+}
+#first{
+    height:600px;
+    width: 100%;
+    border: 0px solid rebeccapurple;
+}
+#first img{
+    width: 100%;
+    height: 100%;
+}
+#second{
+    height:600px;
+    width: 95%;
+    margin: auto;
+    border: 0px solid rebeccapurple;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4c4c4c00;
+    margin-top: 50px;
+}
+.box1{
+    height:auto;
+    width: 45%;
+    margin: auto;
+    border: 0px solid red;
+    font-size: 18px;
+    font-family: Epiloguelight;
+    color: #4c4c4c;
+    line-height: 1.5;
+    margin-top: 110px;
+    
+
+}
+.box2{
+    height:100%;
+    width: 45%;
+    margin: auto;
+    border: 0px solid red;
+}
+#line{
+    height: 100%;
+    width: 1px;
+    border: 0px solid black;
+    margin: auto;
+    background-color: #4c4c4c;
+}
+.box1 p{
+    font-size: 18px;
+    font-family: Epiloguelight;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+h5{
+    font-size: medium;
+}
+/* .box1 p:nth-child(1){
+    margin-right: 60px;
+} */
+
+#text{
+    display: flex;
+    width:auto;
+    border: 0px solid gray;
+    height: auto;
+    
+}
+#text p{
+    font-size: 30px;
+}
+#text p:nth-child(1){
+    margin-right: 5px;
+}
+.red{
+    color: rgb(161, 5, 5);
+}
+#society{
+    font-size: 36px;
+    font-family: Bitterbrush;
+    letter-spacing: 1px;
+    font-weight:bolder;
+}
+#second p:nth-child(2){
+    color:#4c4c4c;
+    /* font-size: large; */
+    /* font-size: 15px; */
+}
+input{
+    border: none;
+    height: 50px;
+    font-size: 30px;
+    width: 100%;
+    border-color: yellow;
+    background-color: #4c4c4c04;
+}
+.row{
+    height: 0.5px;
+    border: 0px solid rebeccapurple;
+    background-color: #4c4c4c;
+    /* margin-top: 30px; */
+}
+#add{
+    height: 100px;
+}
+#submit{
+    padding: 15px 40px 15px 40px;
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgba(240, 0, 0, 0.881);
+}
+
+ /* floating window*/
+ #float{
+    height: 55px;
+    width: 100%;
+    border: 0px solid rebeccapurple;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 640px;
+    z-index: 1;
+    position: fixed;
+  }
+  #float1{
+   height: 100%;
+   width: 15%;
+   border: 0px solid green;
+   margin-left: 25px;
+   display: flex;
+   background-color: gray;
+   border-radius: 25px;
+   cursor: pointer;
+   
+  
+  }
+  #float1 img{
+    width: 50%;
+  }
+  #float1 h1{
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #float2{
+   height: 100%;
+   width: 5%;
+   border: 0px solid rgb(228, 174, 24);
+   margin-right: 20px;
+   border-radius: 25px;
+   cursor: pointer;
+  }
+  #float2 img{
+    width: 100%;
+  }
+body{
+ z-index: 3;
+ position: relative;
+}
+/* floating window ends here */
+
+/* <!-- <dilivering Cities> starts --> */
+#top_para {
+    width: 100%;
+    height: 40px;
+    background-color: #437111;
+    margin-top: -22px;
+  
+  }
+  
+  #top_para>p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  /* dilivering part ends here */

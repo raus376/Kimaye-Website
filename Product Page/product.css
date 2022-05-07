@@ -1,3 +1,25 @@
+/* <!-- <dilivering Cities> starts --> */
+#top_para {
+  width: 100%;
+  height: 40px;
+  background-color: #437111;
+  margin-top: -22px;
+
+}
+
+#top_para>p {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* dilivering part ends here */
+
 body {
     padding: 0px;
     margin: 0px;
@@ -73,8 +95,13 @@ body {
   text-align: center;
   text-decoration: underline;
   cursor: pointer;
-  color:rgba(0, 0, 0, 0.821)
+  color:rgba(0, 0, 0, 0.821);
+  font-weight: 600;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
+}
+#categories>ul:hover{
+  color: #437111;
 }
 /* categories section ends here */
 
@@ -186,7 +213,7 @@ a{
   div+p+p{
     text-align: center;
     color: rgba(166, 5, 5, 0.949);
-    font-size: 20px;
+    font-size: 22px;
     margin-top: -5px;
 
   }
@@ -274,7 +301,7 @@ a{
         position:sticky;
         position: static;
         position: fixed;
-        margin-top: 570px;
+        margin-top: 500px;
         justify-content: space-between;
         z-index: 1;
       }
@@ -325,7 +352,7 @@ a{
      border: 0px solid rebeccapurple;
      display: flex;
      justify-content: space-between;
-     margin-top: 640px;
+     margin-top: 600px;
      z-index: 1;
      position: fixed;
    }
@@ -339,7 +366,7 @@ a{
     border-radius: 25px;
     cursor: pointer;
     
-    /* justify-content: left; */
+   
    }
    #float1 img{
      width: 50%;
@@ -349,7 +376,7 @@ a{
      display: flex;
      justify-content: center;
      align-items: center;
-     /* margin-right: 35px; */
+    
      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    }
    #float2{
@@ -367,3 +394,4 @@ body{
   z-index: 3;
   position: relative;
 }
+/* floating window ends here */
