@@ -134,3 +134,7 @@ a{
     align-items: center;
     display: flex;
 }
+h3{
+    margin-left: 10px;
+    font-weight: 300;
+}
