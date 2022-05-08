@@ -69,7 +69,7 @@
                     </div>
                     </div>
                     <div id="cash">
-                        <input type="checkbox" class="cash">  <h3>Cash on delivery</h3>
+                        <input type="checkbox" class="cash">  <h4>Cash on delivery</h4>
                     </div>
                       <div id="submit">
                         <input id="btn" type="submit" name="" value="Complete order" onclick="myfun()">
@@ -106,11 +106,8 @@ function userFun(){
         localStorage.setItem("userData",JSON.stringify(userArr));
 }
 function myfun(){
-    if (pay == null){
-        alert("Please enter valid details.");
-    }else{
-        prompt("Enter otp");
-    }
-    // alert("ordered successfully")
+    // alert("Please enter valid details.");
+    prompt("Enter otp");
+    alert("ordered successfully");
 }
 </script>
