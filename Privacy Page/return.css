@@ -1,0 +1,85 @@
+body{
+    background-color: #eeeeea;
+}
+#greenbox{
+    height: 140px;
+    width: 100%;
+    background-color: green;
+    text-align: center;
+
+}
+#greenbox h1{
+    font-size: 50px;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+#greenbox a{
+    color:white;
+}
+
+
+i{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+#faqhref p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#faqhref{
+    background-color: #eeeeea;
+    height: 150px;
+
+    width: 100%;
+}
+#faqhead {
+    background-color: #eeeeea;
+    height: auto;
+
+
+
+}
+/* #faqhead>div{
+    margin-top: 25px;
+} */
+.faqhead1 p,h2{
+    width: 95%;
+    font-size: larger;
+    margin:  auto;
+   
+}
+
+.faqhead1 {
+    width: 80%;
+    
+    margin: auto;
+    /* border: 1px grey solid; */
+}
+.faqinput1 {
+    width: 80%;
+    
+    margin: auto;
+    /* border: 1px grey solid; */
+}
+#faqinput{
+    background-color: #eeeeea;
+    justify-content: center;
+    margin:  auto;
+    height: 200px;
+
+}
+.faqinput1 p,h2{
+    width: 95%;
+    font-size: larger;
+    margin:  auto;
+   
+}
+
+
