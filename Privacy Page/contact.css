@@ -19,13 +19,21 @@
 
 }
 #add{
-    width: 50%;
+    width: 43%;
+    /* border: 1px solid red; */
+    text-align: right;
+    margin-top: 150px;
+}
+img{
+    width: 100%;
 }
 
 .image{
     /* position: fixed; */
     position: absolute;
     margin-left: 20%;
+
+    width:60%;
     
 
 
@@ -34,23 +42,32 @@
     justify-content: center;
 }
 #card{
-    border: gainsboro;
-    width: 40%;
+    border: 1px solid gainsboro;
+    width: 100%;
+    justify-content: center;
+    
+    
 
     
 }
+input{
+    width: 100%;
+}
 #details{
     /* border: 1px solid red; */
-    /* justify-content: center; */
+    justify-content: center;
     margin: auto;
-    width: 20%;
+    width: 50%;
     text-align: left;
     font-size: 30px;
+    
 }
-#button{
+button{
     /* background-color: red; */
-    margin-left: 60%;
+    
     border: none;
     border-radius: 20px;
     margin-top: 20px;
+    font-size: 20px;
+    width: 20%;
 }

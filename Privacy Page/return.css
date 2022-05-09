@@ -34,13 +34,13 @@ i{
     text-align: center;
 }
 #faqhref{
-    background-color: #eeeeea;
+    /* background-color: #eeeeea; */
     height: 150px;
 
     width: 100%;
 }
 #faqhead {
-    background-color: #eeeeea;
+    /* background-color: #eeeeea; */
     height: auto;
 
 
@@ -69,9 +69,9 @@ i{
     /* border: 1px grey solid; */
 }
 #faqinput{
-    background-color: #eeeeea;
+    /* background-color: #eeeeea; */
     justify-content: center;
-    margin:  auto;
+    margin: 30px auto;
     height: 200px;
 
 }
@@ -81,5 +81,15 @@ i{
     margin:  auto;
    
 }
-
+body {
+    height: 100%;
+    margin: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.faqheads1{
+    width: 80%;
+    margin: auto;
+}
 
