@@ -5,6 +5,7 @@ body{
     height:600px;
     width: 100%;
     border: 0px solid rebeccapurple;
+    margin-top: 100px;
 }
 #first img{
     width: 100%;
@@ -111,6 +112,9 @@ input{
     cursor: pointer;
     background-color: rgba(240, 0, 0, 0.881);
 }
+#submit:hover{
+    color: #437111;
+}
 
  /* floating window*/
  #float{
@@ -169,6 +173,7 @@ body{
     height: 40px;
     background-color: #437111;
     margin-top: -22px;
+    /* position: fixed; */
   
   }
   
@@ -184,3 +189,24 @@ body{
   }
   
   /* dilivering part ends here */
+
+  #top_para{
+      position:fixed;
+      margin-top: -100px;
+  }
+  #top_para>p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    /* padding: 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+  
+  }
+
+  #navbar{
+margin-top: -60px;
+height: 40px;
+  }
