@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="product.css"> -->
+
+
+    <style>
+        body {
+            background-color: rgb(243, 238, 238);
+        }
+
+        #cart_title {
+
+            width: 100%;
+            height: 80px;
+            margin: auto;
+            background-color: #437111;
+            margin-top: 100px;
+        }
+
+        #cart_title>p {
+            font-size: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        #cart_design {
+            color: white;
+            margin: auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        #top_para {
+            width: 100%;
+            height: 40px;
+            background-color: #437111;
+            margin-top: -12px;
+
+        }
+
+        #top_para>p {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            padding: 15px;
+
+        }
+
+        #cart-items {
+            margin: auto;
+        }
+
+        #pickup-date>p {
+            text-align: center;
+
+        }
+
+        #date {
+            padding: 10px;
+            width: 20%;
+            margin-left: 40%;
+        }
+
+        #choose_time {
+            padding: 10px;
+            width: 22%;
+            margin-left: 40%;
+
+        }
+
+        #instruction {
+
+            height: 40px;
+            width: 20%;
+            margin-left: 30px;
+        }
+
+        .cart-total {
+            /* margin-right: 650px; */
+            gap: 5px;
+            display: flex;
+            height: 50px;
+            width: 20%;
+            margin: auto;
+
+            /* border: 1px solid rebeccapurple; */
+
+
+
+        }
+
+        .cart-total>div {
+            font-size: 30px;
+            margin: auto;
+            /* border: 1px solid red; */
+        }
+
+        .cart-total>div:nth-child(2) {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #437111
+        }
+
+        #total {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="top_para">
+        <p id="para1">Delivering in Mumbai and Delhi | Same day delivery!</p>
+    </div>
+
+
+
+    <!-- Navbar Starts here -->
+    <div id="nav">
+        <div id="navbar">
+            <div class="select">
+                <select name="" id="select1">
+                    <option value="Shop">SHOP</option>
+                    <option value="All Fruits">ALL FRUITS</option>
+                    <option value="Fresh Cuts">FRESH CUTS</option>
+                    <option value="Fruit Combos">FRUIT COMBOS</option>
+                    <option value="Gift By Kimaye">GIFTS BY KIMAYE</option>
+                    <option value="Grape Family By Kimaye">GRAPE FAMILY BY KIMAYE</option>
+                    <option value="Community Buying">COMMUNITY BUYING</option>
+                </select>
+
+                <select name="" id="select2">
+                    <option value="">LEARN</option>
+                    <option value="">OUR STORY</option>
+                    <option value="">WHY KIMAYE</option>
+                    <option value="">TRACEABILITY</option>
+                    <option value="">BEYOND FRUITS</option>
+                </select>
+
+                <p>GROW</p>
+            </div>
+            <div class="logo">
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204"
+                    alt="logoImg" />
+            </div>
+            <div class="loginCart">
+                <img src="https://cdn-icons-png.flaticon.com/128/2991/2991231.png" alt="map" />
+                <p>Delhi</p>
+                <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt="search" />
+                <img id="login" src="https://cdn-icons-png.flaticon.com/512/456/456283.png" alt="user" />
+                <img id="cart" src="https://cdn-icons-png.flaticon.com/128/1656/1656850.png" alt="cart" />
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Ends Here -->
+
+
+
+
+    <div id="cart_title">
+        <h1 id="cart_design">CART</h1>
+
+        <p class="home">Home / Cart</p>
+    </div>
+
+    <section class="container content-section">
+        <main>
+            <table>
+                <thead>
+                    <tr>
+
+                        <th></th>
+                        <th>PRODUCT</th>
+                        <th>DETAILS</th>
+                        <th>PRICE</th>
+                        <th>Add Item</th>
+                        <th>Remove Item</th>
+                        <th>QUANTITY</th>
+                        <th>TOTAL</th>
+
+
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+
+                </tbody>
+            </table>
+        </main>
+
+
+
+        <div class="cart-total">
+
+            <div>CART TOTAL :</div>
+            <div>
+                <p id="total">0</p>
+            </div>
+
+        </div>
+
+        <div id="pickup-date">
+            <p>Pick a Delivery date :</p>
+            <input id="date" type="date">
+
+            <p>Choose a time:</p>
+
+            <select id="choose_time">
+
+                <option value="02.00 PM- 04.00PM">02.00 PM- 04.00PM</option>
+                <option value="04.00 PM- 06.00PM">04.00 PM- 06.00PM</option>
+                <option value="06.00 PM- 08.00PM">06.00 PM- 08.00PM</option>
+
+            </select>
+            <div id="instruction">
+                <h3>SPECIAL INSTRUCTIONS:</h3>
+                <textarea name="" id="" cols="50" rows="10"></textarea>
+            </div>
+
+        </div>
+
+        <button class="proceed_payment">PROCEED TO CHECKOUT</button>
+        <button class="continue_shop">CONTINUE SHOPPING</button>
+    </section>
+
+
+    <!-- footer part -->
+
+    <!-- footer starts here  -->
+    <div id="footer">
+        <div>
+            <div class="options">
+                <div>
+                    <a href="faq.html">FAQ's</a>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div>
+                    <a href="return.html">Shipping & Return Policy</a>
+                </div>
+                <div>
+                    <a href="term.html">Terms & Conditions</a>
+                </div>
+                <div>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <div>
+                    <p>Follow us on</p>
+                </div>
+                <div class="icons">
+                    <div>
+                        <img class="facebook"
+                            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756"
+                            alt="" />
+                    </div>
+                    <div>
+                        <img class="instagram"
+                            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756"
+                            alt="" />
+                    </div>
+                    <div>
+                        <img class="twitter"
+                            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756"
+                            alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <div>
+            <div>
+                <p>Copyright©2020. All Rights Reserved</p>
+            </div>
+            <div class="ting">
+                <div>
+                    <div>
+                        <p>Made</p>
+                    </div>
+                    <div>
+                        <p>by</p>
+                    </div>
+                </div>
+                <div class="h4">
+                    <h4>ting</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer part -->
+
+</body>
+
+</html>
+
+
+
+<!-- javascript starts here -->
+
+
+<script>
+
+
+    var total = 0;
+
+    var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+    cartArr.map(function (elem, index) {
+
+        var count = localStorage.getItem("inc-dec") || 0;
+
+        var td1 = document.createElement("td");
+        td1.innerText = "X";
+        td1.style.textAlign = "center"
+        td1.style.color = "red";
+        td1.style.cursor = "pointer";
+        td1.addEventListener("click", function () {
+            deleteRow(elem, index)
+        });
+
+        var td2 = document.createElement("td");
+        var image = document.createElement("img");
+        image.setAttribute("src", elem.fruitImg);
+        image.style.height = "100px"
+        image.style.width = "100px"
+        td2.append(image);
+        td2.style.textAlign = "center"
+
+        var row = document.createElement("tr")
+        var td3 = document.createElement("td")
+        td3.innerText = elem.fruitName;
+        td3.style.textAlign = "center"
+
+        var td4 = document.createElement("td");
+        td4.innerText = elem.fruitPrice;
+        var bag = elem.fruitPrice;
+        // console.log(bag)
+        td4.style.textAlign = "center"
+
+        var td5 = document.createElement("td");
+        var btn1 = document.createElement("button")
+        btn1.innerText = "Add"
+        btn1.style.width="70px"
+        btn1.style.padding="5px"
+        td5.append(btn1)
+        td5.style.textAlign = "center"
+        btn1.addEventListener("click", incfun)
+        function incfun() {
+            count++;
+            localStorage.setItem("inc-dec", count)
+            console.log(count)
+            window.location.reload();
+        }
+
+        var td6 = document.createElement("td");
+        var btn2 = document.createElement("button")
+        btn2.innerText = "Remove"
+        btn2.style.padding="4.5px"
+        td6.append(btn2)
+        td6.style.textAlign = "center"
+        btn2.addEventListener("click", decfun)
+        function decfun() {
+            count--;
+            console.log(count)
+            localStorage.setItem("inc-dec", count)
+            window.location.reload();
+        }
+
+
+
+
+
+
+        var td7 = document.createElement("td");
+        var res1 = document.createElement("p")
+        res1.innerText = count
+        // console.log(count,typeof Number(count))
+        td7.append(res1)
+        td7.style.textAlign = "center"
+        td7.style.fontWeight = "bold";
+
+        var td8 = document.createElement("td");
+        var bag = bag.substring(1)
+        var res2 = document.createElement("p")
+        var cart_total = Number(bag) * Number(count)
+        res2.innerText = "₹" + cart_total
+        td8.append(res2)
+        td8.style.textAlign = "center"
+        td8.style.fontWeight = "bold";
+
+        total += cart_total
+        document.querySelector("#total").innerText = "₹" + total
+        localStorage.setItem("cartTotal", total)
+
+
+
+
+        row.append(td1, td2, td3, td4, td5, td6, td7, td8);
+
+        document.querySelector("tbody").append(row);
+
+    })
+    function deleteRow(elem, index) {
+        cartArr.splice(index, 1);
+        localStorage.setItem("cartItems", JSON.stringify(cartArr));
+        window.location.reload();
+
+    }
+
+
+
+    document.querySelector(".continue_shop").addEventListener("click", function () {
+        window.location.href = "product.html";
+    });
+
+    document.querySelector(".proceed_payment").addEventListener("click", function () {
+        window.location.href = "payment.html";
+    });
+
+    document.querySelector(".home").addEventListener("click", function () {
+        window.location.href = "index.html";
+    });
+
+</script>
