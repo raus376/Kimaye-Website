@@ -1,6 +1,5 @@
-
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     min-height: 100%;
@@ -48,7 +47,7 @@ html, body {
     border: none;
     border-radius: .3em;
     font-weight: bold;
-    
+
 }
 
 .btn-primary:hover {
@@ -116,7 +115,7 @@ html, body {
 .cart-item {
     width: 45%;
     margin-left: 100px;
-   
+
 }
 
 .cart-price {
@@ -166,13 +165,6 @@ html, body {
     margin-right: 25px;
 }
 
-/* .cart-row:last-child {
-    border-bottom: 1px solid black;
-}
-
-.cart-row:last-child .cart-column {
-    border: none;
-} */
 
 .cart-total {
     text-align: end;
@@ -191,7 +183,7 @@ html, body {
     color: black;
     font-weight: bold;
     font-size: 20px;
- 
+
 }
 
 .btn-purchase {
@@ -209,53 +201,116 @@ html, body {
 #nav {
     background-color: #eeeeea;
     margin-bottom: -100px;
-  }
-  
-  #navbar {
+}
+
+#navbar {
     display: flex;
     height: 50px;
     justify-content: space-between;
     width: 80%;
     margin: auto;
     padding: 10px;
-  }
-  
-  .select {
+}
+
+.select {
     display: flex;
     width: 30%;
-  }
-  #select1,
-  #select2 {
+}
+
+#select1,
+#select2 {
     width: 30%;
     border: none;
     margin-left: 5px;
     background-color: #eeeeea;
-  }
-  #select2 + p {
+}
+
+#select2+p {
     width: 30%;
     margin-left: 10px;
     font-size: 15px;
-  }
-  .logo {
+}
+
+.logo {
     width: 15%;
     margin-left: -100px;
-  }
-  .logo > img {
+}
+
+.logo>img {
     width: 100%;
-  }
-  
-  .loginCart {
+}
+
+.loginCart {
     width: 25%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  }
-  .loginCart > img {
+}
+
+.loginCart>img {
     width: 8%;
     height: 20px;
-  }
-  .loginCart > p {
+}
+
+.loginCart>p {
     margin-left: -10px;
-  }
-  
-  /* Navbar Ends Here */
+}
+
+/* Navbar Ends Here */
+
+
+
+
+table {
+    margin-left: 1%;
+    margin-top: 40px;
+    border-radius: separate;
+    border-spacing: 5rem;
+
+}
+
+th {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 10px;
+}
+
+.proceed_payment {
+    color: white;
+    background-color: #437111;
+    border: none;
+    padding: 15px;
+    border-radius: .3em;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.proceed_payment:hover {
+    background-color: #7ddc42;
+}
+
+
+.continue_shop{
+    color: white;
+    background-color: #437111;
+    border: none;
+    padding: 15px;
+    border-radius: .3em;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.continue_shop:hover {
+    background-color: #7ddc42;
+}
+.home{
+    cursor: pointer;
+}
