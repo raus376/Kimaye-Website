@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Information</title>
+    <link rel="stylesheet" href="address.css">
 </head>
-    <link rel="stylesheet" href="billing.css">
 <body>
     <div id="container">
         <div id="left">
@@ -22,7 +22,7 @@
                 <p>Contact information</p>
                 <h5>Already have an account?</h5>
             </div>
-                <h5 id="log"><a href="login.html"> Log in</a></h5>
+                <h5 id="log"><a href="login.html"></a> Log in</h5>
             </div>
             <form>
                 <input id="mail" type="text" placeholder="Email">
@@ -52,34 +52,47 @@
                 </div>
             </form>
         </div>
+        </div>
+        <div id="right">
+            <h4>
+                Cart
+                <span class="price" style="color: black"
+                  ><i class="fa fa-shopping-cart"></i> <b></b
+                ></span>
+              </h4>
+              <hr />
+              <p id="total">
+                Total <span class="price" style="color: black"></span>
+              </p>
+        </div>
     </div>
 </body>
 </html>
 <script>
     document.querySelector("form").addEventListener("submit",userData);
 
-    let userArr = JSON.parse(localStorage.getItem("userArr")) || [];
-    function userData(){
-        event.preventDefault();
+let userArr = JSON.parse(localStorage.getItem("userArr")) || [];
+function userData(){
+    event.preventDefault();
 
-        let userObj = {
-            mail : document.querySelector("#mail").value,
-            region : document.querySelector("#region").value,
-            fname : document.querySelector("#first").value,
-            lname : document.querySelector("#last").value,
-            add : document.querySelector("#address").value,
-            land : document.querySelector("#landmark").value,
-            city : document.querySelector("#csp").value,
-            state : document.querySelector(".state").value,
-            pin : document.querySelector(".pin").value,
-            mobile : document.querySelector("#mobile").value,
-        }
-        userArr.push(userObj);
-        // console.log(userArr)
-        localStorage.setItem("userData",JSON.stringify(userArr))
+    let userObj = {
+        mail : document.querySelector("#mail").value,
+        region : document.querySelector("#region").value,
+        fname : document.querySelector("#first").value,
+        lname : document.querySelector("#last").value,
+        add : document.querySelector("#address").value,
+        land : document.querySelector("#landmark").value,
+        city : document.querySelector("#csp").value,
+        state : document.querySelector(".state").value,
+        pin : document.querySelector(".pin").value,
+        mobile : document.querySelector("#mobile").value,
     }
-    let data = document.querySelector("form").addEventListener("submit",userData);
-    function myfun(){
-    window.location.href="Payment.html"
+    userArr.push(userObj);
+    // console.log(userArr)
+    localStorage.setItem("userData",JSON.stringify(userArr))
+}
+let data = document.querySelector("form").addEventListener("submit",userData);
+function myfun(){
+    window.location.href="payment.html"
 }
 </script>
