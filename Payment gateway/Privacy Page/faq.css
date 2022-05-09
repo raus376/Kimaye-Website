@@ -1,0 +1,248 @@
+body{
+    background-color: #eeeeea;
+}
+#nav {
+    background-color: #eeeeea;
+    padding: 5px;
+  }
+  
+  #navbar {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .select {
+    display: flex;
+    width: 30%;
+  }
+  #select1,
+  #select2 {
+    width: 30%;
+    border: none;
+    margin-left: 5px;
+    background-color: #eeeeea;
+  }
+  #select2 + p {
+    width: 30%;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 0px;
+  }
+  .logo {
+    width: 15%;
+    margin-left: -100px;
+    margin-top: -15px;
+  }
+  .logo > img {
+    width: 100%;
+  }
+  
+  .loginCart {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .loginCart > img {
+    width: 8%;
+    height: 20px;
+  }
+  .loginCart > p {
+    margin-left: -10px;
+    margin-top: 15px;
+  }
+  
+  /* Navbar Ends Here */
+  
+  /* <!-- footer starts here  --> */
+  .options > div {
+    margin-top: -5px;
+  }
+  
+  .options > div > a {
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #footer {
+    background-color: #7d9c5b;
+    margin-top: 40px;
+  }
+  #footer > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  .icons {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: -10px;
+  }
+  .icons > div > img {
+    margin-left: 10px;
+  }
+  .socialMedia > div > p {
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  #footer > .socialMedia {
+    margin-left: 100%;
+  }
+  div > hr {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  hr + div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    width: 60%;
+    justify-content: space-around;
+  }
+  .ting {
+    display: flex;
+    justify-content: right;
+  }
+  .ting > div > div > p {
+    background-color: white;
+    text-align: left;
+    font-size: 10px;
+  }
+  .ting > div > div {
+    height: 10%;
+  }
+  
+  .ting > div > div + div {
+    margin-top: -5px;
+    margin-left: 20px;
+  }
+  .ting > div > div + div > p {
+    width: 95%;
+  }
+  .ting > .h4 {
+    position: relative;
+  }
+  .ting > div > h4 {
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    font-family: monospace;
+    margin-left: 5px;
+    /* bottom: 10px;   */
+  }
+#greenbox{
+    height: auto;
+    width: 100%;
+    background-color: green;
+    margin-top: 0px;
+
+}
+#greenbox h1{
+    font-size: 80px;
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+}
+#faqhref a{
+    width: 20%;
+    margin: auto;
+    color: black;
+    text-decoration: none;
+    
+    font-size: larger;
+    /* background-color: red; */
+    font-weight: bolder;
+
+}
+#faqhref a:hover{
+   
+    margin: auto;
+    color: black;
+    text-decoration:underline;
+    
+    /* background-color: red; */
+
+}
+
+#faqhref p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#faqhref{
+    /* background-color: #eeeeea; */
+    height: auto;
+
+    width: 100%;
+}
+#faqhead {
+    /* background-color: #eeeeea; */
+    height: auto;
+    margin-top: 30px;
+
+
+
+}
+/* #faqhead>div{
+    margin-top: 25px;
+} */
+.faqhead1 p,h2{
+    width: 95%;
+    font-size: larger;
+    margin:  auto;
+   
+}
+
+.faqhead1 {
+    width: 80%;
+    
+    margin: auto;
+    border: 1px grey solid;
+    height: auto;
+}
+.faqinput1 {
+    width: 80%;
+    
+    margin: 30px auto;
+    border: 1px grey solid;
+    height: auto;
+}
+#faqinput{
+    /* background-color: #eeeeea; */
+    justify-content: center;
+    margin:  auto;
+    height: auto;
+
+}
+.faqinput1 p,h2{
+    width: 95%;
+    font-size: larger;
+    margin:  auto;
+   
+}
+body {
+    height: 100%;
+    margin: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
