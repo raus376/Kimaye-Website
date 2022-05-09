@@ -5,109 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
 </head>
-<link rel="stylesheet" href="payment.css">
 <body>
     <div id="container">
         <div id="left">
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo.png?17838"
-            alt="kimaye">
-            <div id="crrPage">
-                <h5><a href="billing.html">Information ></a></h5>
-                <h5>Payment</h5>
-            </div>
-            
-            <form> 
-                <div id="info">
-                    Contact
-                    <input type="text" name="">
-                    <p id="line1"></p>
-                    Billing
-                    <input type="text" name="">
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo.png?17838"
+                alt="kimaye">
+                <div id="crrPage">
+                    <h5><a href="address.html">Information ></a></h5>
+                    <h5>Payment</h5>
                 </div>
-            </form>
-            
-            <p>Payment</p>
-            <h5>All transactions are secure and encrypted.</h5>
-            <div id="Payment">
-                <form>Accepted Card
-                    <br>
-                    <img src="image/card1.png" width="100">
-                    <img src="image/card2.png" width="50">
-                    <br><br>
-                    <p>Credit/Debit card number</p>
-                    <input id="pay" type="text">
-                    <br>
-                    <p>Valid till </p>
-                    <div id="card">
-                        <select>
-                            <option>MM</option>
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
-                            <option>05</option>
-                            <option>06</option>
-                            <option>07</option>
-                            <option>08</option>
-                            <option>09</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                        </select>
-                        <select>
-                            <option>YY</option>
-                            <option>22</option>
-                            <option>23</option>
-                            <option>24</option>
-                            <option>25</option>
-                            <option>26</option>
-                        </select>
-                        <p id="p1">CVV</p>
-                        <input id="cvv" type="number" name="">
+                
+                <form> 
+                    <div id="info">
+                        Contact
+                        <input type="text" name="">
+                        <p id="line1"></p>
+                        Billing
+                        <input type="text" name="">
                     </div>
+                
+                
+                <p>Payment</p>
+                <h5>All transactions are secure and encrypted.</h5>
+                <div id="Payment">
+                    <form>Accepted Card
+                        <br>
+                        <img src="Payment/card1.png" width="100"/>
+                        <img src="Payment/card2.png" width="50"/>
+                        <br><br>
+                        <p>Credit/Debit card number</p>
+                        <input id="pays" type="text"/>
+                        <br>
+                        <p>Valid till </p>
+                        <div id="card">
+                            <select>
+                                <option>MM</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <select>
+                                <option>YY</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                            </select>
+                            <p id="p1">CVV</p>
+                            <input id="cvv" type="number" name="">
+                        </div>
+                        </div>
+                        <div id="cash">
+                            <input type="checkbox" class="cash"/>  <h4>Cash on delivery</h4>
+                        </div>
+                          <div id="submit">
+                            <input id="btn" type="submit" name="" value="Complete order" onclick="userFun"/>
+                            <p><a href="address.html"> Return to information</a></p>
+                          </div>   
+                          <p id="line"></p>
+                        <div id="bottom">
+                            <p><a href="Refund policy.html"> Refund Policy</a></p>
+                            <p><a href="Shipping Policy.html"> Shipping Policy</a> </p>
+                            <p><a href="Privacy policy.html"> Privacy Policy</a></p>
+                            <p><a href="Terms of service.html"> Terms of service</a></p>
+                        </div>
+                    </form>
                     </div>
-                    <div id="cash">
-                        <input type="checkbox" class="cash">  <h4>Cash on delivery</h4>
-                    </div>
-                      <div id="submit">
-                        <input id="btn" type="submit" name="" value="Complete order" onclick="myfun()">
-                        <p><a href="billing.html"> Return to information</a></p>
-                      </div>   
-                      <p id="line"></p>
-                    <div id="bottom">
-                        <p><a href="Refund policy.html"> Refund Policy</a></p>
-                        <p><a href="Shipping Policy.html"> Shipping Policy</a> </p>
-                        <p><a href="Privacy policy.html"> Privacy Policy</a></p>
-                        <p><a href="Terms of service.html"> Terms of service</a></p>
-                    </div>
-                </form>
-                </div>
-            </div>
+        </div>
+        <div id="right">
+            <h4>
+                Cart
+                <span class="price" style="color: black"
+                  ><i class="fa fa-shopping-cart"></i> <b></b
+                ></span>
+              </h4>
+              <hr />
+              <p id="total">
+                Total <span class="price" style="color: black"></span>
+              </p>
         </div>
     </div>
 </body>
 </html>
 <script>
-let pay = document.querySelector("form").addEventListener("submit",userFun);
-let userArr= [];
+    var cartArr = localStorage.getItem("cartTotal");
+  console.log(cartArr);
+  document.querySelector("#total").innerText = "Total-" + "Rs" + cartArr;
+  let pay = document.querySelector("form");
+  pay.addEventListener("submit", userFun);
 
-function userFun(){
+  function userFun() {
     event.preventDefault();
+    var cardNum = document.querySelector("#pays").value;
+    var exp = document.querySelector("#card").value;
+    var usercvv = document.querySelector("#cvv").value;
 
-    var userObj={
-        cardNumber: document.querySelector("#pay").value,
-        expiry: document.querySelector("#card").value,
-        userCvv: document.querySelector("#cvv").value,
-    };
-    userArr.push(userObj);
-        console.log(userArr);
-        localStorage.setItem("userData",JSON.stringify(userArr));
-}
-function myfun(){
-    // alert("Please enter valid details.");
-    prompt("Enter otp");
-    alert("ordered successfully");
-}
+    if (cardNum == "" || exp == "" || usercvv == "") {
+      alert("Please Enter Valid Credentials ");
+    } else {
+      prompt("Enter OTP Here");
+      window.location.href="successfull.html"
+      
+    }
+  }
 </script>

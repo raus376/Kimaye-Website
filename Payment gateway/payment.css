@@ -7,9 +7,8 @@
 }
 #left{
     /* border: 1px solid red; */
-    width: 55%;
+    width: 65%;
     background-color: #ececec;
-    margin: auto;
 }
 #info>input{
     width: 85%;
@@ -133,6 +132,20 @@ a{
     height: 50px;
     align-items: center;
     display: flex;
+}
+#right{
+    /* border: 1px solid; */
+    width: 35%;
+    height: 25%;
+    margin: 75px 30px 0px 50px;
+    background-color: white;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+span.price {
+    float: right;
+    color: grey;
 }
 h4{
     margin-left: 10px;
